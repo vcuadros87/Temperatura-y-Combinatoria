@@ -1,80 +1,76 @@
 body {
-  font-family: Arial, sans-serif;
-  background: #e3bcd9;
-  display: flex;
-  justify-content: center;
-  padding: 40px 16px;
+  font-family: Georgia, serif;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 0 20px;
+  background: #200B4B;
+  color: #FF3D94;
 }
 
-.contenedor {
-  background: white;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 24px;
-  width: 100%;
-  max-width: 400px;
+h1 {
+  font-size: 26px;
+  border-bottom: 2px solid #FF3D94;
+  padding-bottom: 8px;
+  color: #FF3D94;
 }
 
 h2 {
-  text-align: center;
-  margin-bottom: 6px;
-  color: #80006f;
+  font-size: 19px;
+  margin-top: 0;
+  color: #B5307E;
 }
 
+h3 {
+  color: #FF3D94;
+}
+
+section {
+  background: #3F1C6D;
+  border: 1px solid #6A2A98;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
 
 label {
   display: block;
-  margin-bottom: 4px;
-  font-size: 14px;
+  margin-top: 12px;
+  font-weight: bold;
+  color: #FF3D94;
 }
 
 input[type="number"] {
-  width: 96%;
-  padding: 7px 7px 7px 7px;
-  margin-bottom: 14px;
-  border: 1px solid #ecbae3;
+  width: 100%;
+  padding: 6px 10px;
+  margin-top: 4px;
+  border: 1px solid #6A2A98;
   border-radius: 4px;
-  font-size: 15px;
+  font-size: 16px;
+  box-sizing: border-box;
+  background: #200B4B;
+  color: #FF3D94;
 }
 
 button {
-  width: 100%;
-  padding: 9px;
-  background: #8722a5;
-  color: white;
+  margin-top: 16px;
+  padding: 8px 18px;
+  background: #B5307E;
+  color: #ffffff;
   border: none;
   border-radius: 4px;
   font-size: 16px;
-  cursor: pointer;
-  margin-bottom: 8px;
 }
 
 button:hover {
-  background: #b82faf;
+  background: #6A2A98;
 }
 
-#btnReset {
-  background: #aaa;
-}
-
-#btnReset:hover { background: #dc9acf; }
-
-#resultado {
-  text-align: center;
+.resultado {
   margin-top: 16px;
-  font-size: 17px;
+  padding: 10px 14px;
+  background: #6A2A98;
+  border-left: 4px solid #FF3D94;
+  border-radius: 4px;
   display: none;
-}
-
-#resultado span {
-  font-weight: bold;
-  color: #d53a9a;
-}
-
-#error {
-  color: #ff00ff;
-  font-size: 14px;
-  text-align: center;
-  margin-top: 8px;
-  display: none;
+  color: #ffffff;
 }
