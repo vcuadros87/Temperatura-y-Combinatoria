@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculadora de Combinaciones</title>
+  <link rel="stylesheet" href="./CSS/style.css" />
+</head>
+<body>
+
+  <h1>Calculadora de Combinaciones</h1>
+
+  <section>
+    <h2>POWERBALL</h2>
+    <form onsubmit="calcular(event)">
+      <h3>Grupo 1</h3>
+      <label for="n1">n1 (total de objetos):</label>
+      <input type="number" id="n1" value="59" min="0" required />
+      <label for="r1">r1 (objetos a elegir):</label>
+      <input type="number" id="r1" value="5" min="0" required />
+
+      <h3>Grupo 2</h3>
+      <label for="n2">n2 (total de objetos):</label>
+      <input type="number" id="n2" value="35" min="0" required />
+      <label for="r2">r2 (objetos a elegir):</label>
+      <input type="number" id="r2" value="1" min="0" required />
+      <button type="submit">Calcular combinaciones</button>
+    </form>
+
+    <div id="resultado" class="resultado"></div>
+  </section>
+
+  <script src="script2.js"></script>
+</body>
+</html>
