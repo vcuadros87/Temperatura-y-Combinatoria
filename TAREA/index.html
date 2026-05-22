@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simuladores Interactivos</title>
+  <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+  <div class="page">
+    <h1 class="titulo-principal">SIMULADORES INTERACTIVOS</h1>
+
+    <div class="contenedor">
+      <h2>TRANSFERENCIA DE CALOR</h2>
+      <form id="formCalor" onsubmit="event.preventDefault(); calcularCalor();">
+        <label for="t0">T₀ — Temperatura inicial (°F)</label>
+        <input type="number" id="t0" placeholder="ej. 120" required>
+        <label for="ts">Tₛ — Temperatura del ambiente (°F)</label>
+        <input type="number" id="ts" placeholder="ej. 38" required>
+        <label for="k">k — Constante de enfriamiento</label>
+        <input type="number" id="k" placeholder="ej. 0.45" step="0.01" required>
+        <label for="t">t — Tiempo (horas)</label>
+        <input type="number" id="t" placeholder="ej. 3" min="0" required>
+        <button type="submit">Calcular</button>
+      </form>
+      <button class="btn-reset" type="button" onclick="resetCalor()">Realizar otro cálculo</button>
+      <div class="error" id="c1-error">Por favor ingresa valores válidos.</div>
+      <div class="resultado" id="c1-resultado">
+        Temperatura al tiempo t: <span id="c1-val"></span> °F
+      </div>
+    </div>
+
+    <div class="contenedor">
+      <h2>POWERBALL — COMBINACIONES</h2>
+      <form id="formComb" onsubmit="event.preventDefault(); calcularComb();">
+        <p class="grupo-label">Grupo 1</p>
+        <label for="n1">n₁ (total de objetos)</label>
+        <input type="number" id="n1" value="59" min="0" required>
+        <label for="r1">r₁ (objetos a elegir)</label>
+        <input type="number" id="r1" value="5" min="0" required>
+        <p class="grupo-label">Grupo 2</p>
+        <label for="n2">n₂ (total de objetos)</label>
+        <input type="number" id="n2" value="35" min="0" required>
+        <label for="r2">r₂ (objetos a elegir)</label>
+        <input type="number" id="r2" value="1" min="0" required>
+        <button type="submit">Calcular combinaciones</button>
+      </form>
+      <div class="error" id="c2-error">Error: r no puede ser mayor que n en ningún grupo.</div>
+      <div class="resultado-multi" id="c2-resultado"></div>
+    </div>
+
+  </div>
+  <script src="./JS/script.js"></script>
+</body>
+</html>
